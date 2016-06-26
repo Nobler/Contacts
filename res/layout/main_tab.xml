@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/top_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="-5dp"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:id="@+id/phone_tab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tab_phone"
+                android:contentDescription="@string/image_description" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="24dp"
+            android:background="@color/divider_bg"
+            android:contentDescription="@string/image_description"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:id="@+id/contacts_tab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tab_contacts"
+                android:contentDescription="@string/image_description" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="24dp"
+            android:background="@color/divider_bg"
+            android:contentDescription="@string/image_description"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:id="@+id/messaging_tab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tab_messaging"
+                android:contentDescription="@string/image_description" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <!--
+        Automatically move the cursor followed by ViewPager's item,
+        let ImageView under the ViewGroup like RelativeLayout etc.
+        -->
+
+        <ImageView
+            android:id="@+id/cursor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/image_description"
+            android:scaleType="matrix"
+            android:src="@drawable/tab_cursor" />
+    </RelativeLayout>
+
+</LinearLayout>

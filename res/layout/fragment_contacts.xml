@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/no_contact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.4"
+            android:drawableTop="@drawable/ic_contacts_bigger"
+            android:gravity="center"
+            android:text="@string/no_contacts" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <com.wdjhzw.contacts.view.ClearableEditText
+            android:id="@+id/contacts_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/search_part"
+            android:drawableLeft="@drawable/ic_search_suggest_tip"
+            android:drawableStart="@drawable/ic_search_suggest_tip"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textSize="16sp" />
+
+        <include layout="@layout/contacts_list_with_quick_indexer" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/contacts_center_alpha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:alpha="0.8"
+        android:background="@drawable/center_alpha_bg"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:typeface="monospace"
+        android:visibility="gone" />
+
+</FrameLayout>

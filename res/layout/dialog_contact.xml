@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/contact_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/scroll_view_item"
+        android:clickable="true" >
+
+        <FrameLayout
+            android:layout_width="@dimen/contact_image_size"
+            android:layout_height="@dimen/contact_image_size"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/contact_image_margin"
+            android:layout_marginRight="@dimen/contact_image_margin"
+            android:background="@drawable/contact_photo_bg" >
+
+            <TextView
+                android:id="@+id/contact_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/contact_image_font_size" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/contact_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_contact_more_detail"
+            android:contentDescription="@string/image_description" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_bg"
+        android:contentDescription="@string/image_description" />
+
+    <ScrollView
+        android:id="@+id/contact_detail_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/contact_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

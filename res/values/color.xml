@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="gray_bright">#fff0f0f0</color>
+    <color name="gray_deep">#ffe7e7e7</color>
+    <color name="divider_bg">#ffdbdbdb</color>
+    <color name="contact_image_pressed">#9e0099cc</color>
+
+</resources>

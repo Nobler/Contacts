@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/main_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        layout="@layout/main_tab" />
+
+    <include
+        android:id="@+id/title_bar_edit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        layout="@layout/title_bar_edit"
+        android:visibility="gone" />
+
+    <com.wdjhzw.contacts.view.CustomViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@color/gray_bright" />
+
+    <include
+        android:id="@+id/dock_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dock_height"
+        android:layout_marginTop="@dimen/dock_margin_top"
+        layout="@layout/dock_phone" />
+
+    <include
+        android:id="@+id/dock_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dock_height"
+        android:layout_marginTop="@dimen/dock_margin_top"
+        layout="@layout/dock_contacts" />
+
+    <include
+        android:id="@+id/dock_messaging"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dock_height"
+        android:layout_marginTop="@dimen/dock_margin_top"
+        layout="@layout/dock_messaging" />
+
+    <include
+        android:id="@+id/dock_edit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dock_height"
+        android:layout_marginTop="@dimen/dock_margin_top"
+        layout="@layout/dock_edit" />
+
+</LinearLayout>

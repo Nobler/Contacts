@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Contacts</string>
+    <string name="image_description">Description</string>
+    <string name="search_from">Search from </string>
+    <string name="contacts"> contacts</string>
+    <string name="no_contacts">No Contacts</string>
+    <string name="total_selected">Selected</string>
+    <string name="display_name_dialog_title">Name</string>
+    <string name="copy_to_clipboard">Copied to clipboard</string>
+    <string name="positive">OK</string>
+    <string name="copy_to_clipboard_successfully">Copied to clipboard successfully!</string>
+    <string name="xiaomi_account">Xiaomi Account</string>
+    <string name="wechat_account">WeChat Account</string>
+    <string name="qq_account">QQ Account</string>
+    <string name="qqi_account">QQi Account</string>
+    <string name="other_account">Other Account</string>
+
+</resources>

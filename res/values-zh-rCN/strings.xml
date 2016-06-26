@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">联系人</string>
+    <string name="image_description">Description</string>
+    <string name="search_from">从</string>
+    <string name="contacts">位联系人中搜索</string>
+    <string name="no_contacts">无联系人</string>
+    <string name="total_selected">已选中</string>
+    <string name="display_name_dialog_title">姓名</string>
+    <string name="copy_to_clipboard">复制到剪贴板</string>
+    <string name="positive">确定</string>
+    <string name="copy_to_clipboard_successfully">已复制到剪贴板！</string>
+    <string name="xiaomi_account">小米账户</string>
+    <string name="wechat_account">微信账户</string>
+    <string name="qq_account">QQ账户</string>
+    <string name="qqi_account">QQi账户</string>
+    <string name="other_account">其他账户</string>
+
+</resources>
